@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Hero from './components/Hero';
-// import security from ''
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
@@ -30,16 +28,16 @@ export default function Home () {
                     <li> 
                       <a
                         href="https://www.linkedin.com/in/kwamedavour/"
-                        rel="noreferer noopener"
-                        className="flex items-center gap-x-3 mb-5 hover:text-purple-400 duration-300">
+                        target="_blank"
+                        className="flex items-center gap-x-3 mb-5">
                           <FaLinkedin style={{color: 'white', fontSize: '40px'}}/>
                       </a>
                     </li>
                     <li>
                       <a
-                        href=""
-                        rel="noreferer noopener"
-                        className="flex items-center gap-x-3 mb-5 hover:text-purple-400 duration-300"
+                        href="https://github.com/ghost-protocol"
+                        target="_blank"
+                        className="flex items-center gap-x-3 mb-5"
                       ><FaGithubSquare style={{color: 'white', fontSize: '40px'}}/>
                       </a>
                     </li>
