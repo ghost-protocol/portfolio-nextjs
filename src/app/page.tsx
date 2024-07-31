@@ -1,113 +1,131 @@
 import Image from "next/image";
+import Hero from './components/Hero';
+// import security from ''
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 
-export default function Home() {
+
+import Head from 'next/head';
+ 
+export default function Home () {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+      <main className="max-w-7xl mx-auto lg:px-16 px-6">
+        <section className="flex xl:flex-row flex-col xl:items-center items-start xl:justify-center justify-between gap-x-12 lg:mt-32 mt-20 mb-16">
+            <div className="lg:max-w-2xl max-w-2xl">
+
+              <h1 className="text-3xl font-bold tracking-tight sm:text-5xl mb-6 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full">
+              Cybersecurity specialist, software engineer, and technology enthusiast
+              </h1>
+
+              <p className="text-base text-zinc-400 leading-relaxed">
+              I'm Kwame Davour, a passionate cybersecurity expert, app developer with a knack for problem-solving.
+              I love building and maintaining apps, constantly seeking innovative ways to secure business and individuals.
+              </p>
+              <br />
+              <p className="text-base text-zinc-400 leading-relaxed">Over the past decade, I have worked and consulted for firms in the financial and energy sectors across Africa and the Middle East. 
+              My roles included monitoring networks and investigating computer fraud. 
+              I have protected critical systems and helped clients implement secure measures to guard against advanced persistent threats and respond to security breaches.
+              </p>
+              <ul className="flex items-center gap-x-6 my-10">
+                    <li> 
+                      <a
+                        href="https://www.linkedin.com/in/kwamedavour/"
+                        rel="noreferer noopener"
+                        className="flex items-center gap-x-3 mb-5 hover:text-purple-400 duration-300">
+                          <FaLinkedin style={{color: 'white', fontSize: '40px'}}/>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        rel="noreferer noopener"
+                        className="flex items-center gap-x-3 mb-5 hover:text-purple-400 duration-300"
+                      ><FaGithubSquare style={{color: 'white', fontSize: '40px'}}/>
+                      </a>
+                    </li>
+                    
+                    <li>
+                    <a
+                      href={'mailto:kwamedavou@gmail.com'}
+                      className="flex items-center gap-x-3 mb-5 hover:text-purple-400 duration-300"
+                    ><MdOutlineEmail style={{color: 'white', fontSize: '40px'}}/>Email Me
+                    </a>
+                  </li>
+              </ul>
+            </div>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              src='/security.png'
+              width={450}
+              height={450}
+              alt=""
+              // className="bg-zinc-800 rounded-md p-2"
             />
-          </a>
-        </div>
-      </div>
+            {/* software_security.png */}
+        </section>
+        
+        <section className="mt-10 max-w-2xl ">
+          
+              <h2 className="font-semibold text-4xl mb-4">Expertise</h2>
+                <h2 className="font-semibold text-2xl mb-4">Cyber Security</h2>
+              {/* <p className="text-zinc-400 max-w-lg"></p> */}
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+              <ul className="flex flex-wrap items-center gap-3 mt-8">
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Incident Response</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Digital Forensics</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Managed Security Provider</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Malware</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Hacking</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Threat Hunting</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Threat Intelligence</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Security Assessment & Testing</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Security Operations</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Vulnerability Management</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Cyber Risk</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Software Security</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">OT/ICS/SCADA Security</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Security Engineering</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Network Security</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Identity Security</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Payment Security</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Social Media Security</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Projects</li>
+                  <li key="" className="bg-[#da6d00] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Consulting</li>
+              </ul>
+              
+          </section>
+            
+            <section className="mt-10 max-w-2xl">
+              <h2 className="font-semibold text-2xl mb-4">Software Engineering</h2>
+              {/* <p className="text-zinc-400 max-w-lg"></p> */}
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+              <ul className="flex flex-wrap items-center gap-3 mt-8">
+                  <li key="" className="bg-[#b05800] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Web Development</li>
+                  <li key="" className="bg-[#b05800] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">HTML</li>
+                  <li key="" className="bg-[#b05800] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">CSS</li>
+                  <li key="" className="bg-[#b05800] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">JavaScript</li>
+                  <li key="" className="bg-[#b05800] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Next.js</li>
+                  <li key="" className="bg-[#b05800] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Tailwind CSS</li>
+                  <li key="" className="bg-[#b05800] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Python</li>
+                  <li key="" className="bg-[#b05800] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Django</li>
+                  <li key="" className="bg-[#b05800] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">SQL</li>
+                  <li key="" className="bg-[#b05800] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">API</li>
+                  <li key="" className="bg-[#b05800] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Agile</li>
+                  <li key="" className="bg-[#b05800] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">App Projects</li>
+              </ul>
+            </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+            <section className="mt-10 max-w-2xl">
+              <h2 className="font-semibold text-2xl mb-4">Others</h2>
+              {/* <p className="text-zinc-400 max-w-lg"></p> */}
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+              <ul className="flex flex-wrap items-center gap-3 mt-8">
+                  <li key="" className="bg-[#804000] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Card Payment</li>
+                  <li key="" className="bg-[#804000] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">PCIDSS</li>
+                  <li key="" className="bg-[#804000] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Linux Administration</li>
+                  <li key="" className="bg-[#804000] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Software Support</li>
+                  <li key="" className="bg-[#804000] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1">Tech Mentoring</li>
+              </ul>
+            </section>
     </main>
-  );
-}
+    );
+};
