@@ -8,7 +8,10 @@ const experiences = [
     jobTitle: "Senior OT SOC Analyst",
     duration: "August 2023 - Present",
     description:
-      "Worked on various front-end and back-end projects, improving the functionality and performance of web applications, and collaborating with senior developers to implement new features.",
+      "Monitoring, triaging and response for ICS/OT security events across multiple sites within the country \
+      Utilized Security Orchestration, Automation and Response mechanisms for effective incident management \
+      Performing threat and vulnerability research across event data collected by systems and communicating risks, and effective \
+      escalations with site leads and management."
   },
   {
     id: "2",
@@ -17,7 +20,10 @@ const experiences = [
     jobTitle: "Manager, Information Security Operations",
     duration: "Jan 2023 - Aug 2023",
     description:
-      "Worked on various front-end and back-end projects, improving the functionality and performance of web applications, and collaborating with senior developers to implement new features.",
+      "Directed, mentored, trained, and conducted performance reviews for all SOC team members \
+      Contributed to security design forums to enforce security-first standards and to harden public-facing systems \
+      Improved SOC 3 metrics in the area of MTTR, MTTD, log visibility reach. \
+      Provided technical and executive reports covering the operations of the unit and the threat landscape",
   },
   {
     id: "3",
@@ -26,7 +32,8 @@ const experiences = [
     jobTitle: "Lead, Cyber Security Engineer",
     duration: "Aug 2021 - Dec 2022",
     description:
-      "Worked on various front-end and back-end projects, improving the functionality and performance of web applications, and collaborating with senior developers to implement new features.",
+      "Identified potential risks by deploying and managing security tools such as Crowdstrike, M365 Defender, DarkTrace, malware sandbox.\
+       Deployed security-centric projects such as forensic and malware analysis lab for effective intrusion defense."
   },
   {
     id: "4",
@@ -35,7 +42,9 @@ const experiences = [
     jobTitle: "Threat Response & Forensic Specialist",
     duration: "Jul 2019 - Jul 2021",
     description:
-      "Worked on various front-end and back-end projects, improving the functionality and performance of web applications, and collaborating with senior developers to implement new features.",
+      "Managed and high-impact incidents such as Phishing, Ransomware, crypto mining etc., end-to-end by conducting network, memory, and filesystem forensic analysis.\
+      Improved situational awareness of response teams by 95% by conducting threat simulations and building playbooks.\
+      Authored IR reports, highlighting intrusions and working towards remediations with SMEs",
   },
   {
     id: "5",
@@ -44,7 +53,9 @@ const experiences = [
     jobTitle: "Cyber Security Analyst",
     duration: "Jan 2017 - Jul 2019",
     description:
-      "Worked on various front-end and back-end projects, improving the functionality and performance of web applications, and collaborating with senior developers to implement new features.",
+      "Triaged and analyzed security logs using SIEM, AV, Firewall, IDS/IPS, EDR, and Cloud, consistently achieving all SLA goals.\
+      Utilized Security Orchestration, Automation, and Response (SOAR) to improve incident closure by 80%.\
+      Enhanced visibility of critical banking assets, logs, and sensor health states on detection systems by 97%.",
   },
   {
     id: "6",
@@ -53,16 +64,16 @@ const experiences = [
     jobTitle: "Technical Support Engineer",
     duration: "Jan 2011 - Jan 2017",
     description:
-      "Worked on various front-end and back-end projects, improving the functionality and performance of web applications, and collaborating with senior developers to implement new features.",
+      "Worked on various card payments management projects, such as PCIDSS, 3DSecure, web payment integration, EMV migration, transaction monitoring.\
+      Implemented effective fraud logic that minimized card fraud by 95%. Optimized support and monitoring workflow by building effective scripts."
   },
   {
     id: "7",
     name: "Freelance/Contract",
     location: "Remote",
-    jobTitle: "Web Developer",
-    duration: "Jan 2011 - Present",
+    jobTitle: "Full Stack Engineer",
     description:
-      "Worked on various front-end and back-end projects, improving the functionality and performance of web applications, and collaborating with senior developers to implement new features.",
+      "Worked with clients on various web projects, designing, building and implementing new features as well as improving the functionality, security and performance of web applications.",
   },
 ];
 
@@ -93,7 +104,7 @@ export default async function Profile() {
               />
             </a>
             <div className="flex flex-col items-start">
-              <h3 className="text-xl font-bold">{data.jobTitle} <span style={{color: '#FF916B'}}>@{data.name}</span></h3>
+              <h3 className="text-xl font-bold">{data.jobTitle}<span style={{color: '#FF916B'}}>  @{data.name}</span></h3>
               <small className="text-sm text-zinc-500 mt-2 tracking-widest uppercase">
               {data.location} | {data.duration}
               </small>
