@@ -72,6 +72,7 @@ const experiences = [
     name: "Freelance/Contract",
     location: "Remote",
     jobTitle: "Full Stack Engineer",
+    duration: "Jan 2015 - Present",
     description:
       "Worked with clients on various web projects, designing, building and implementing new features as well as improving the functionality, security and performance of web applications.",
   },
