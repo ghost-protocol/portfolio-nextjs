@@ -18,7 +18,7 @@ export default function Home () {
               </h1>
 
               <p className="text-base text-zinc-400 leading-relaxed">
-              I'm Kwame Davour, a passionate cybersecurity expert, app developer with a knack for problem-solving.
+              I&apos;m Kwame Davour, a passionate cybersecurity expert, app developer with a knack for problem-solving.
               I love building and maintaining apps, constantly seeking innovative ways to secure business and individuals.
               </p>
               <br />
